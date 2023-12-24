@@ -32,7 +32,7 @@ jobs:
 
       - name: Sign AAB
         id: sign
-        uses: vineetnegi0101/ExpenseManager@v1
+        uses: vineetnegi0101/ExpenseManager@master
         with:
           releaseDirectory: app/build/outputs/bundle/release
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
@@ -42,7 +42,7 @@ jobs:
 
       - name: Upload AAB
         id: uploadArtifact
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@v1
         with:
             name: app
             path: app/build/outputs/bundle/release/app-release.aab
