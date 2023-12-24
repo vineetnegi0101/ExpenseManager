@@ -28,7 +28,7 @@ jobs:
 
       - name: Sign AAB
         id: sign
-        uses: vineetnegi0101/ExpenseManager@v1
+        uses: vineetnegi0101/ExpenseManager@v2
         with:
           releaseDirectory: app/build/outputs/bundle/release
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
